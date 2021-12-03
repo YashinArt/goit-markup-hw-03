@@ -25,7 +25,7 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-h1,h2,h3,h4,p{
+h1,h2,h3,h4,p,ul{
     margin: 0;
     padding: 0;
 }
@@ -67,7 +67,7 @@ img{
 }
 /* contener */
 .contener {
-outline: 2px solid red;
+/* outline: 2px solid red; */
 margin-left: auto;
 margin-right: auto;
 width: 1200px;
@@ -252,7 +252,28 @@ padding-right: 15px;
 .team{
     background-color: var(--background-team-color);
 }
+.section-team{
+    display: flex;
+    padding: 0;
+    
+    margin-left: -30px;
+    margin-top: -30px;
+
+    /* outline: 1px solid blue; */
+}
+.section-team .item{
+    flex-basis: calc(100% / 3 - 30px);
+
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.section-team .item *{
+    /* outline: 1px solid green; */
+}
 .team-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -260,6 +281,8 @@ padding-right: 15px;
     text-align: center;
 }
 .team-text {
+    margin-bottom: 30px;
+
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.18;
@@ -267,10 +290,16 @@ padding-right: 15px;
 }
 /* footer */
 .page-footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--background-footer-color);
-    text-indent: 100px;
+    
 }
 .footer-logo{
+    display: block;
+    margin-bottom: 20px;
+
     color: var(--hero-title-color);
     font-family: 'Raleway';
     font-weight: 700;
@@ -278,7 +307,7 @@ padding-right: 15px;
     line-height: 1.19;
 }
 .page-footer-logo-web{
-    color: var(--accent-text-color)
+   color: var(--accent-text-color)
 }
 .page-footer a:hover,
 .page-footer a:focus {
@@ -299,7 +328,9 @@ padding-right: 15px;
 .page-footer-contact a:focus {
     color: var(--accent-text-color)
 }
-
+.page-footer-contact .item{
+    margin-top: 9px;
+}
 
 
 /* Портфолио */
@@ -314,12 +345,15 @@ padding-right: 15px;
     text-decoration: none;
 }
 .project-button button{
+    padding: 6px 22px;
     cursor: pointer;
     font-family:inherit;
+    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    border: 1px solid transparent;
     background-color: var(--background-team-color);
 }
 .button:hover,
@@ -335,6 +369,9 @@ padding-right: 15px;
     margin-left: 8px;
     margin-bottom: 50px;
 }
+.project-button .item:first-child{
+    margin-left: 0;
+}
 .projects-list{
     display: flex;
     flex-wrap: wrap;
@@ -343,7 +380,7 @@ padding-right: 15px;
     margin-left: -30px;
     margin-top: -30px;
 
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 .projects-list .project{
     flex-basis: calc(100% / 3 - 30px);
